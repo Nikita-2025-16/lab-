@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Про нас | Друзі Тварин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="script/script.js"></script>
+  <!-- Шапка сайту (повністю ідентична головній сторінці) -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Друзі Тварин">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">ОСОБИСТИЙ КАБІНЕТ</a></li>
+        <li><a href="about.html">ПРО НАС</a></li>
+        <li><a href="#">БЛОГ</a></li>
+        <li><a href="#">НОВИНИ ТА АКЦІЇ</a></li>
+        <li><a href="contacts.html">КОНТАКТИ</a></li>
+      </ul>
+    </nav>
+    <div class="location">
+      <img src="location-icon.png" alt="Іконка локації">
+      <a href="#">КОНОТОП</a>
+    </div>
+  </header>
+
+  <!-- Основний контент сторінки "Про нас" -->
+  <main class="about-container">
+<!-- Бокове меню (пагінація) -->
+<aside class="sidebar">
+  <nav>
+    <ul>
+      <li><a href="index.html">1</a></li>
+      <li><a href="page2.html">2</a></li>
+      <li class="circle is-active"><a href="about.html">3</a></li>
+      <li><a href="contacts.html">4</a></li>
+      <li><a href="recording.html">5</a></li>
+      <li><a href="#">6</a></li>
+    </ul>
+  </nav>
+</aside>
+    <h1 class="page-title">Про нас</h1>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="back-link">
+      <!-- Векторна стрілочка з Figma -->
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18L9 12L15 6" stroke="#43A5EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      На головну
+    </a>
+
+    <!-- Секція: Наша місія -->
+    <section class="mission-section">
+      <span class="mission-label">НАША МІСІЯ</span>
+      <h2 class="mission-heading">Дбаємо про тварин так, як про членів родини — щодня й щоночі.</h2>
+      <p class="mission-text">«Друзі тварин» — цілодобова ветеринарна клініка в Конотопі. Ми поєднуємо сучасне
+        європейське обладнання, досвідчених лікарів та уважне ставлення, щоб ваш улюбленець отримав допомогу в будь-який
+        час доби.</p>
+    </section>
+
+    <!-- Секція: Факти (3 картки) -->
+    <section class="facts-section">
+      <div class="fact-card">
+        <span class="fact-num">24/7</span>
+        <h3 class="fact-title">Цілодобовий прийом</h3>
+        <p class="fact-desc">Приймаємо екстрені випадки вдень і вночі, без вихідних.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-num">15 000+</span>
+        <h3 class="fact-title">Вилікованих пацієнтів</h3>
+        <p class="fact-desc">Тисячі хвостатих і пухнастих повернулися додому здоровими.</p>
+      </div>
+      <div class="fact-card">
+        <span class="fact-num">12 років</span>
+        <h3 class="fact-title">Піклуємося про Конотоп</h3>
+        <p class="fact-desc">Понад десять років досвіду та довіри власників тварин.</p>
+      </div>
+    </section>
+<!-- Інтерактивний слайдер  -->
+<div class="slider-container">
+  <div id="imageSlider">
+    <img src="image1.png" alt="Песик та котик" class="slide">
+    <img src="image2.png" alt="Ветеринар з собакою" class="slide">
+    <img src="image3.png" alt="Ветеринарна аптечка" class="slide">
+  </div>
+
+  <div class="slider-controls">
+    <button id="prevBtn" type="button" class="btn-primary">Попереднє</button>
+    <button id="nextBtn" type="button" class="btn-primary">Наступне</button>
+  </div>
+</div>
+    <!-- Секція: Команда  -->
+    <section class="team-section">
+      <h2 class="team-heading">Наша команда</h2>
+      <table class="team-table">
+        <thead>
+          <tr>
+            <th>Ім'я</th>
+            <th>Посада</th>
+            <th>Досвід</th>
+            <th>Розклад роботи</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="doc-name">Др. Іванов О.</td>
+            <td>Головний ветеринар</td>
+            <td>15 років</td>
+            <td>Пн-Пт 08:00-16:00</td>
+          </tr>
+          <tr>
+            <td class="doc-name">Др. Коваленко М.</td>
+            <td>Хірург</td>
+            <td>12 років</td>
+            <td>Пн-Пт 16:00-00:00</td>
+          </tr>
+          <tr>
+            <td class="doc-name">Др. Шевченко А.</td>
+            <td>Терапевт</td>
+            <td>9 років</td>
+            <td>Вт-Сб 09:00-17:00</td>
+          </tr>
+          <tr>
+            <td class="doc-name">Др. Бондаренко І.</td>
+            <td>Дерматолог</td>
+            <td>7 років</td>
+            <td>Пн, Ср, Пт 10:00-18:00</td>
+          </tr>
+          <tr>
+            <td class="doc-name">Др. Мельник Д.</td>
+            <td>Реаніматолог</td>
+            <td>10 років</td>
+            <td>Нічні зміни 20:00-08:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+<section class="contact-us-box">
+  <h2 class="team-heading">Зв'яжіться з нами</h2>
+  <form id="contactForm" class="contact-us-form">
+    <div class="form-group">
+      <label for="name">Ваше ім'я</label>
+      <input type="text" id="name" name="name" class="form-field" placeholder="Введіть ім'я" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Електронна пошта</label>
+      <input type="email" id="email" name="email" class="form-field" placeholder="example@mail.com" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Повідомлення</label>
+      <textarea id="message" name="message" class="form-field field-problem" required></textarea>
+    </div>
+    <button type="submit" class="btn-primary submit-btn">Надіслати</button>
+  </form>
+</section>
+  </main>
+
+  <!-- Підвал із соцмережами -->
+  <footer class="footer-socials about-footer">
+<ul>
+  <li><a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+  <li><a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+  <li><a href="https://t.me/" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a></li>
+  <li><a href="https://www.youtube.com/" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a></li>
+</ul>
+  </footer>
+
+</body>
+
+</html>

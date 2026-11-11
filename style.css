@@ -1,0 +1,1189 @@
+/* ==========================================================
+   БАЗОВІ НАЛАШТУВАННЯ ТА ШРИФТИ
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 1024px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ==========================================================
+   ШАПКА САЙТУ (HEADER) - СПІЛЬНА ДЛЯ ВСІХ СТОРІНОК
+   ========================================================== */
+.header {
+  display: flex;
+  justify-content: flex-start;
+  /* Вирівнюємо весь вміст по лівому краю */
+  align-items: center;
+  padding: 26px 40px;
+  width: 100%;
+  gap: 150px;
+  /* Збільшений відступ між логотипом та навігацією */
+}
+
+.logo img {
+  width: 133px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  /* Зменшений відступ між меню та іконкою локації */
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.navigation a:hover {
+  color: #2697E7;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.location img {
+  width: 24px;
+  height: 24px;
+}
+
+.location a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #2898E7;
+  text-transform: uppercase;
+}
+
+/* ==========================================================
+   ПІДВАЛ ІЗ СОЦМЕРЕЖАМИ - СПІЛЬНИЙ КОД
+   ========================================================== */
+.footer-socials {
+  position: absolute;
+  bottom: 37px;
+  left: 243px;
+}
+
+.footer-socials ul {
+  list-style: none;
+  display: flex;
+  gap: 47px;
+  align-items: center;
+}
+
+.footer-socials img {
+  height: 50px;
+  width: auto;
+}
+
+/* ==========================================================
+   ОСНОВНИЙ КОНТЕНТ ТА БОКОВЕ МЕНЮ (СПІЛЬНЕ ДЛЯ СТОРІНОК З ЦИФРАМИ)
+   ========================================================== */
+.container {
+  display: flex;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.sidebar {
+  width: 120px;
+  padding-left: 16px;
+  padding-top: 30px;
+  z-index: 10;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.circle.is-active {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+}
+
+/* ==========================================================
+   HERO СЕКЦІЯ (ГОЛОВНА СТОРІНКА)
+   ========================================================== */
+.hero-section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 2;
+}
+
+.text-content h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #072E62;
+  line-height: 1.21;
+}
+
+.text-content h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #072C61;
+  text-transform: uppercase;
+  line-height: 1.21;
+  margin-bottom: 20px;
+}
+
+/* СПІЛЬНА КНОПКА ЗАПИСАТИСЬ */
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 58px;
+  background-color: #2A9AE9;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 33.5px;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btn-primary:hover {
+  background-color: #47ACF1;
+}
+
+.btn-primary:active {
+  background-color: #1C78B9;
+  border: 1.5px solid #000000;
+}
+
+.image-content {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  z-index: 1;
+}
+
+.image-content img {
+  width: 607px;
+  height: auto;
+}
+
+/* ==========================================================
+   СТОРІНКА "2 СТОРІНКА" (ОБЛАДНАННЯ)
+   ========================================================== */
+.equipment-section {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.equipment-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.equipment-text h1 {
+  font-size: 64px;
+  font-weight: 500;
+  color: #000000;
+  line-height: 1.21;
+  margin-bottom: 40px;
+}
+
+.equipment-btn {
+  height: 60px;
+  margin-left: -24px;
+}
+
+.equipment-image {
+  position: absolute;
+  right: -40px;
+  top: -20px;
+  z-index: 1;
+}
+
+.equipment-image img {
+  width: 650px;
+  height: auto;
+}
+
+/* ==========================================================
+   СТОРІНКА "ПРО НАС" (ABOUT)
+   ========================================================== */
+.about-container {
+  padding: 30px 120px 0 120px;
+  position: relative;
+  width: 100%;
+}
+
+.page-title {
+  font-size: 48px;
+  font-weight: 600;
+  color: #072E62;
+  margin-bottom: 6px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #43A5EA;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-bottom: 24px;
+}
+
+.back-link:hover {
+  color: #1D8CD7;
+}
+.mission-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 1202px;
+  margin-bottom: 16px;
+  background: none;
+}
+
+.mission-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2697E7;
+  text-transform: uppercase;
+}
+
+.mission-heading {
+  font-size: 28px;
+  font-weight: 600;
+  color: #072E62;
+  background: none;
+}
+
+.mission-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  background: none;
+}
+
+.facts-section {
+  display: flex;
+  gap: 31px;
+  width: 1202px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.fact-card {
+  width: 380px;
+  height: 160px;
+  background-color: #F1E8E8;
+  border: 1px solid #433C3C;
+  border-radius: 33.5px;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact-num {
+  font-size: 40px;
+  font-weight: 700;
+  color: #2697E7;
+}
+
+.fact-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #072E62;
+}
+
+.fact-desc {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.team-section {
+  width: 1202px;
+}
+
+.team-heading {
+  font-size: 32px;
+  font-weight: 600;
+  color: #072E62;
+  margin-bottom: 16px;
+}
+
+.team-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid #433C3C;
+  border-radius: 33.5px;
+  overflow: hidden;
+  background-color: #FFFFFF;
+}
+
+.team-table th,
+.team-table td {
+  height: 44px;
+  padding: 0 16px 0 28px;
+  text-align: left;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.team-table thead th {
+  background-color: #2697E7 !important;
+  font-weight: 600;
+}
+
+.team-table tbody tr:nth-child(odd) {
+  background-color: #F1E8E8;
+}
+
+.team-table tbody tr:nth-child(even) {
+  background-color: #FFFFFF;
+}
+
+.team-table tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+.team-table .doc-name {
+  font-weight: 600;
+  color: #072E62;
+  width: 280px;
+}
+
+.team-table td:nth-child(2) {
+  width: 340px;
+}
+
+.team-table td:nth-child(3) {
+  width: 160px;
+}
+
+.team-table td:nth-child(4) {
+  width: 420px;
+}
+
+.about-footer {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-top: 40px;
+  margin-left: 243px;
+  margin-bottom: 40px;
+}
+
+
+/* ==========================================================
+   СТОРІНКА "КОНТАКТИ" (CONTACTS)
+   ========================================================== */
+.contacts-container {
+  padding: 30px 120px 0 120px;
+  position: relative;
+  width: 100%;
+}
+
+.contacts-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 40px;
+  width: 1202px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  width: 560px;
+  font-style: normal;
+}
+
+.contact-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.contact-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2697E7;
+  text-transform: uppercase;
+}
+
+.contact-value {
+  font-size: 24px;
+  font-weight: 600;
+  color: #072E62;
+}
+
+.contacts-btn {
+  margin-top: 10px;
+}
+
+/* Додано відносне позиціонування для iframe */
+.contacts-map {
+  width: 602px;
+  height: 399px;
+  border: 1px solid #433C3C;
+  border-radius: 33.5px;
+  overflow: hidden;
+  background-color: #F1E8E8;
+  position: relative;
+}
+
+.contacts-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.contacts-footer {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-top: 60px;
+  margin-left: 243px;
+  margin-bottom: 40px;
+}
+
+/* ==========================================================
+   СТОРІНКА "ОФОРМЛЕННЯ ЗАМОВЛЕННЯ" (RECORDING)
+   ========================================================== */
+.order-container {
+  padding: 30px 120px 0 120px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.order-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.order-back {
+  margin-bottom: 50px;
+}
+
+/*  Форма  вертикальна (у стовпчик) */
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 965px;
+  margin-left: 10px;
+}
+.form-field {
+  width: 100%;
+  background-color: #F1E8E8;
+  border-radius: 14px;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #5A6571;
+  outline: none;
+}
+
+.form-field::placeholder {
+  color: #5D6E81;
+}
+
+.field-name {
+  height: 61px;
+  border: 1px solid #433C3C;
+}
+
+.field-time {
+  height: 46px;
+  border: 1px solid #000000;
+}
+
+.field-problem {
+  height: 214px;
+  border: 1px solid #000000;
+  resize: none;
+}
+
+.order-footer {
+  position: relative;
+  bottom: auto;
+  left: auto;
+  margin-top: 200px;
+  margin-left: 245px;
+  margin-bottom: 40px;
+}
+/* ==========================================================
+   ПОЗИЦІОНУВАННЯ САЙДБАРУ НА ІНШИХ СТОРІНКАХ
+   ========================================================== */
+.about-container .sidebar,
+.contacts-container .sidebar,
+.order-container .sidebar {
+  position: absolute;
+  left: 0;
+  top: 30px;
+  /* Вирівнюємо цифри по висоті заголовка сторінки */
+}
+/* Кнопка відправки форми */
+.submit-btn {
+  margin-top: 10px;
+  width: 350px;
+  /* Зробимо її трохи меншою за основну кнопку на головній */
+  align-self: flex-start;
+  /* Вирівнюємо по лівому краю форми */
+}
+/* ==========================================================
+   ЛАБОРАТОРНА РОБОТА №7: БЛОКОВА МОДЕЛЬ CSS ТА ФОРМИ
+   ========================================================== */
+
+/* Вирівнюємо сайдбар навпроти заголовка */
+.about-container .sidebar,
+.contacts-container .sidebar,
+.order-container .sidebar {
+  top: 30px;
+}
+
+/* Контейнер форми за блоковою моделлю (padding, border, margin, box-shadow) */
+.order-box,
+.contact-us-box {
+  width: 100%;
+  max-width: 760px;
+  margin: 10px 0 40px 10px;
+  padding: 32px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(7, 46, 98, 0.08);
+}
+
+.contact-us-box {
+  margin-top: 50px;
+  margin-left: 0;
+}
+
+.order-form,
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Блокова модель для label (display: block, margin-bottom) */
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #072E62;
+}
+
+/* Додаткові стилі та анімація при фокусі й наведенні (Завдання №2 Лаби №7) */
+.form-field {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.form-field:focus {
+  border-color: #2697E7;
+  box-shadow: 0 0 0 4px rgba(38, 151, 231, 0.2);
+  background-color: #FFFFFF;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  color: #FFFFFF;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1D8CD7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(38, 151, 231, 0.35);
+}
+/* =========================================
+   СТИЛІ ДЛЯ СЛАЙДЕРА (Лабораторна 8-9)
+   ========================================= */
+.slider-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#imageSlider {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    margin-bottom: 15px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: none; 
+}
+
+.slide:first-child {
+    display: block; /* Перша картинка видима одразу */
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slider-controls button {
+    width: auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    height: 44px;
+    cursor: pointer;
+}
+/* =========================================
+   СТИЛІ ДЛЯ СЛАЙДЕРА (Лабораторна 8-9)
+   ========================================= */
+.slider-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#imageSlider {
+    width: 100%;
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    margin-bottom: 15px;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: none; 
+}
+
+.slide:first-child {
+    display: block; /* Перша картинка видима одразу */
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.slider-controls button {
+    width: auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    height: 44px;
+    cursor: pointer;
+}
+/* =========================================
+   СТИЛІ ДЛЯ СЛАЙДЕРА (Лабораторна 8-9)
+   ========================================= */
+.slider-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+#imageSlider {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #F8FAFC;
+  margin-bottom: 15px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: none;
+}
+
+.slide:first-child {
+  display: block;
+  /* Перша картинка видима одразу */
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider-controls button {
+  width: auto;
+  padding: 10px 24px;
+  font-size: 16px;
+  height: 44px;
+  cursor: pointer;
+}
+/* ==========================================================
+   АДАПТИВНИЙ ДИЗАЙН ПІД МОБІЛЬНУ ВЕРСІЮ (MEDIA QUERIES)
+   ========================================================== */
+
+/* Планшети (до 1024px) */
+@media (max-width: 1024px) {
+  .header {
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .navigation ul {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-container,
+  .contacts-container,
+  .order-container {
+    padding: 30px 40px 0 80px;
+  }
+
+  .mission-section,
+  .facts-section,
+  .team-section,
+  .contacts-wrapper,
+  .order-form {
+    width: 100%;
+  }
+
+  .facts-section {
+    flex-wrap: wrap;
+  }
+
+  .fact-card {
+    flex: 1 1 300px;
+    width: auto;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contacts-info,
+  .contacts-map {
+    width: 100%;
+  }
+
+  .image-content,
+  .equipment-image {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 30px;
+  }
+
+  .hero-section,
+  .equipment-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* ==========================================================
+   ОНОВЛЕНИЙ МОБІЛЬНИЙ ДИЗАЙН (ДО 768px)
+   ========================================================== */
+@media (max-width: 768px) {
+  body {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+ /* 1. Акуратна шапка (Ультракомпактна) */
+ .header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 6px;
+   /* Мінімальна відстань між елементами */
+   padding: 8px 10px;
+   /* Зменшили відступи зверху і знизу */
+   background-color: #FFFFFF;
+   border-bottom: 1px solid #F1E8E8;
+ }
+
+ .logo img {
+   height: 50px;
+   /* Жорстко обмежуємо висоту логотипа */
+   width: auto;
+   object-fit: contain;
+ }
+
+ .header-right {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 8px;
+   /* Менша відстань між меню і містом */
+   width: 100%;
+ }
+
+  /* 2. Компактне меню (БЕЗ скролу) */
+  .navigation {
+    width: 100%;
+    padding: 0;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* Дозволяє пунктам переноситись на новий рядок */
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .navigation a {
+    font-size: 13px;
+    padding: 6px 12px;
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    white-space: nowrap;
+    /* Забороняє розрив слів усередині кнопок */
+  }
+
+  .location {
+    gap: 6px;
+    margin-top: 4px;
+  }
+
+  .location img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .location a {
+    font-size: 14px;
+  }
+
+  /* 3. Головний контент та відступи */
+  .container,
+  .about-container,
+  .contacts-container,
+  .order-container {
+    flex-direction: column;
+    padding: 20px 16px;
+  }
+
+  /* 4. Акуратні цифри-пагінація */
+  .sidebar,
+  .about-container .sidebar,
+  .contacts-container .sidebar,
+  .order-container .sidebar {
+    position: static;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  .sidebar nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .sidebar a {
+    font-size: 16px;
+  }
+
+  .circle.is-active {
+    width: 32px;
+    height: 32px;
+    margin-left: 0;
+  }
+
+  /* 5. Тексти та заголовки */
+  .text-content {
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .text-content h1,
+  .equipment-text h1 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 4px;
+  }
+
+  .text-content h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  .page-title,
+  .order-title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .back-link {
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  /* 6. Кнопки та картинки */
+  .btn-primary,
+  .equipment-btn,
+  .submit-btn {
+    width: 100%;
+    max-width: 100%;
+    height: 52px;
+    font-size: 18px;
+    margin: 0;
+    border-radius: 16px;
+  }
+
+  .image-content,
+  .equipment-image {
+    position: static;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .image-content img,
+  .equipment-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  /* 7. Картки, таблиця, форма */
+  .mission-section {
+    width: 100%;
+  }
+
+  .mission-heading {
+    font-size: 22px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+  }
+
+  .facts-section {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 24px 0;
+  }
+
+  .fact-card {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .fact-num {
+    font-size: 32px;
+  }
+
+  .fact-title {
+    font-size: 18px;
+  }
+
+  .team-section {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .team-heading {
+    font-size: 24px;
+  }
+
+  .team-table {
+    border-radius: 16px;
+  }
+
+  .team-table th,
+  .team-table td {
+    font-size: 14px;
+    padding: 10px 12px;
+    height: 40px;
+    white-space: nowrap;
+  }
+
+  .contacts-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .contacts-info {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .contact-value {
+    font-size: 20px;
+  }
+
+  .contacts-map {
+    width: 100%;
+    height: 280px;
+    border-radius: 20px;
+  }
+
+  .order-box,
+  .contact-us-box {
+    padding: 24px 16px;
+    border-radius: 18px;
+    margin: 10px 0 24px 0;
+  }
+
+  .form-field {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .field-name,
+  .field-time {
+    height: 50px;
+  }
+
+  .field-problem {
+    height: 140px;
+  }
+
+  /* 8. Соцмережі */
+  .footer-socials,
+  .about-footer,
+  .contacts-footer,
+  .order-footer {
+    position: static;
+    margin: 30px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-socials ul {
+    gap: 24px;
+  }
+
+  .footer-socials img {
+    height: 40px;
+  }
+}

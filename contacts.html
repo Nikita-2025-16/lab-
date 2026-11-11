@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти | Друзі Тварин</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="script/script.js"></script>
+  <!-- Шапка сайту -->
+  <header class="header">
+    <div class="logo">
+      <img src="logo.png" alt="Логотип Друзі Тварин">
+    </div>
+    <nav class="navigation">
+      <ul>
+        <li><a href="#">ОСОБИСТИЙ КАБІНЕТ</a></li>
+        <li><a href="about.html">ПРО НАС</a></li>
+        <li><a href="#">БЛОГ</a></li>
+        <li><a href="#">НОВИНИ ТА АКЦІЇ</a></li>
+        <li><a href="contacts.html">КОНТАКТИ</a></li>
+      </ul>
+    </nav>
+    <div class="location">
+      <img src="location-icon.png" alt="Іконка локації">
+      <a href="#">КОНОТОП</a>
+    </div>
+  </header>
+
+  <!-- Основний контент сторінки "Контакти" -->
+  <main class="contacts-container">
+<!-- Бокове меню (пагінація) -->
+<aside class="sidebar">
+  <nav>
+    <ul>
+      <li><a href="index.html">1</a></li>
+      <li><a href="page2.html">2</a></li>
+      <li><a href="about.html">3</a></li>
+      <li class="circle is-active"><a href="contacts.html">4</a></li>
+      <li><a href="recording.html">5</a></li>
+      <li><a href="#">6</a></li>
+    </ul>
+  </nav>
+</aside>
+    <h1 class="page-title">Контакти</h1>
+
+    <!-- Кнопка назад -->
+    <a href="index.html" class="back-link">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M15 18L9 12L15 6" stroke="#43A5EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      На головну
+    </a>
+
+    <!-- Блок із контактами та картою -->
+    <div class="contacts-wrapper">
+
+      <!-- Ліва колонка: Текстові контакти -->
+      <address class="contacts-info">
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div class="contact-text">
+            <span class="contact-label">АДРЕСА</span>
+            <span class="contact-value">м. Конотоп, вул. Успенсько-Троїцька, 12</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📞</div>
+          <div class="contact-text">
+            <span class="contact-label">ТЕЛЕФОНИ</span>
+            <span class="contact-value">+38 (050) 123-45-67<br>+38 (099) 765-43-21</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-text">
+            <span class="contact-label">EMAIL</span>
+            <span class="contact-value">info@druzi-tvaryn.com.ua</span>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🕒</div>
+          <div class="contact-text">
+            <span class="contact-label">ГОДИНИ РОБОТИ</span>
+            <span class="contact-value">Цілодобово, без вихідних</span>
+          </div>
+        </div>
+
+        <a href="recording.html" class="btn-primary contacts-btn">Записатись</a>
+
+      </address>
+
+      <!-- Права колонка: Інтерактивна карта (Google Maps) -->
+      <div class="contacts-map">
+      <iframe src="https://www.google.com/maps?q=Конотоп&output=embed" style="border:0; width:100%; height:100%;"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Підвал із соцмережами -->
+  <footer class="footer-socials contacts-footer">
+  <ul>
+    <li><a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a></li>
+    <li><a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a></li>
+    <li><a href="https://t.me/" target="_blank"><img src="telegram-icon.png" alt="Telegram"></a></li>
+    <li><a href="https://www.youtube.com/" target="_blank"><img src="youtube-icon.png" alt="YouTube"></a></li>
+  </ul>
+  </footer>
+
+</body>
+
+</html>
